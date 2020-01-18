@@ -13,6 +13,10 @@
 		F52094DE23D26ED2003F1D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52094DC23D26ED2003F1D1C /* Main.storyboard */; };
 		F52094E023D26ED5003F1D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52094DF23D26ED5003F1D1C /* Assets.xcassets */; };
 		F52094E323D26ED5003F1D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52094E123D26ED5003F1D1C /* LaunchScreen.storyboard */; };
+		F52094EB23D26F75003F1D1C /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52094EA23D26F75003F1D1C /* CityTableViewController.swift */; };
+		F52094EE23D2710F003F1D1C /* WeatherURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52094ED23D2710F003F1D1C /* WeatherURLManager.swift */; };
+		F52094F523D276D5003F1D1C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52094F423D276D5003F1D1C /* SwiftyJSON.swift */; };
+		F52094F823D27984003F1D1C /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52094F723D27984003F1D1C /* CityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		F52094DF23D26ED5003F1D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52094E223D26ED5003F1D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52094E423D26ED5003F1D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52094EA23D26F75003F1D1C /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		F52094ED23D2710F003F1D1C /* WeatherURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherURLManager.swift; sourceTree = "<group>"; };
+		F52094F423D276D5003F1D1C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F52094F623D276DA003F1D1C /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		F52094F723D27984003F1D1C /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +65,28 @@
 		F52094D523D26ED2003F1D1C /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				F52094EC23D26FFD003F1D1C /* Controller */,
 				F52094D623D26ED2003F1D1C /* AppDelegate.swift */,
 				F52094D823D26ED2003F1D1C /* SceneDelegate.swift */,
-				F52094DA23D26ED2003F1D1C /* ViewController.swift */,
 				F52094DC23D26ED2003F1D1C /* Main.storyboard */,
 				F52094DF23D26ED5003F1D1C /* Assets.xcassets */,
+				F52094F423D276D5003F1D1C /* SwiftyJSON.swift */,
+				F52094F623D276DA003F1D1C /* SwiftyJSON.h */,
 				F52094E123D26ED5003F1D1C /* LaunchScreen.storyboard */,
 				F52094E423D26ED5003F1D1C /* Info.plist */,
+				F52094ED23D2710F003F1D1C /* WeatherURLManager.swift */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		F52094EC23D26FFD003F1D1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F52094EA23D26F75003F1D1C /* CityTableViewController.swift */,
+				F52094DA23D26ED2003F1D1C /* ViewController.swift */,
+				F52094F723D27984003F1D1C /* CityTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52094EB23D26F75003F1D1C /* CityTableViewController.swift in Sources */,
+				F52094F823D27984003F1D1C /* CityTableViewCell.swift in Sources */,
 				F52094DB23D26ED2003F1D1C /* ViewController.swift in Sources */,
+				F52094EE23D2710F003F1D1C /* WeatherURLManager.swift in Sources */,
 				F52094D723D26ED2003F1D1C /* AppDelegate.swift in Sources */,
+				F52094F523D276D5003F1D1C /* SwiftyJSON.swift in Sources */,
 				F52094D923D26ED2003F1D1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
